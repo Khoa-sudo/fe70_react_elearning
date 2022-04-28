@@ -13,7 +13,7 @@ export const dangNhapAction = (thongTinDangNhap) => {
           thongTinDangNhap:result.data,
         });
       }
-
+      history.push('/home')
       console.log("result dangNhapAction", result);
     } catch (error) {
         console.log('error',error.response?.data)

@@ -10,6 +10,7 @@ import { CheckoutTemplate } from "./templates/CheckoutTemplate/CheckoutTemplate"
 import Contact from "./pages/Contact/Contact";
 import News from "./pages/News/News";
 import { UserTemplate } from "./templates/UserTemplate/UserTemplate";
+import Profile from "./pages/Profile/Profile";
 
 export const history = createBrowserHistory();
 function App() {
@@ -19,8 +20,12 @@ function App() {
         <HomeTemplate path="/home" exact Component={Home} />
         <HomeTemplate path="/contact" exact Component={Contact} />
         <HomeTemplate path="/news" exact Component={News} />
+        <HomeTemplate path="/profile" exact Component={Profile} />
+
+        
         <UserTemplate path="/login" exact Component={Login} />
         <UserTemplate path="/register" exact Component={Register} />
+        
         <CheckoutTemplate path="/checkout/:id" exact Component={Checkout} />
 
         <HomeTemplate path="/" exact Component={Home} />
